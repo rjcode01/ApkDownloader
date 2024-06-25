@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <title>Download Android APK</title>
   <style>
     body {
@@ -19,6 +20,16 @@
       justify-content: center;
       align-items: center;
     }
+
+    .outer-container {
+      display: flex;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .container {
       text-align: center;
       background: white;
@@ -26,9 +37,11 @@
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
     .container h1 {
       margin-bottom: 20px;
     }
+
     .download-button {
       background-color: #4CAF50;
       color: white;
@@ -43,24 +56,27 @@
       border: none;
       transition: background-color 0.3s ease;
     }
+
     .download-button:hover {
       background-color: #45a049;
     }
   </style>
 </head>
+
 <body>
   <h1 style="text-align: center;">Download Our Android App</h1>
- <div style="display: flex; column-gap: 2rem; row-gap: 2rem; justify-content: center; align-items: center; flex-wrap: wrap;">
-  <div class="container">
-    <h2>NewsFeed</h2>
-    <p>Click the button below to download the latest version of our Android app.</p>
-    <a href="/NewsFeed.apk" class="download-button" download>Download APK</a>
+  <div class="outer-container">
+    <div class="container">
+      <h2>NewsFeed</h2>
+      <p>Click the button below to download the latest version of our Android app.</p>
+      <a href="/NewsFeed.apk" class="download-button" download>Download APK</a>
+    </div>
+    <div class="container">
+      <h2>CryptoIn</h2>
+      <p>Click the button below to download the latest version of our Android app.</p>
+      <a href="/CryptoIn.apk" class="download-button" download>Download APK</a>
+    </div>
   </div>
-  <div class="container">
-    <h2>CryptoIn</h2>
-    <p>Click the button below to download the latest version of our Android app.</p>
-    <a href="/CryptoIn.apk" class="download-button" download>Download APK</a>
-  </div>
- </div>
 </body>
+
 </html>
